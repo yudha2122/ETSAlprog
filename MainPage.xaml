@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DaerahRawanBanjir.MainPage"
+             Title="Login"
+             BackgroundColor="#0B2E58">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30"
+                             Spacing="16"
+                             VerticalOptions="Center">
+
+            <Label Text="LOGIN SISTEM"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White" />
+
+            <Label Text="SISTEM ANALISIS DAERAH RISIKO RAWAN BANJIR"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#8DD9FF" />
+
+            <Frame Padding="18"
+                   CornerRadius="12"
+                   HasShadow="False"
+                   BackgroundColor="#123E70"
+                   BorderColor="#1F6FA8">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Entry x:Name="EntryUser"
+                           Placeholder="Username"
+                           TextColor="White"
+                           PlaceholderColor="#87BFE8"
+                           BackgroundColor="#0B2E58" />
+
+                    <Entry x:Name="EntryPass"
+                           Placeholder="Password"
+                           IsPassword="True"
+                           TextColor="White"
+                           PlaceholderColor="#87BFE8"
+                           BackgroundColor="#0B2E58" />
+
+                    <Button Text="Masuk ke Verifikasi Wajah"
+                            Clicked="OnLoginClicked"
+                            BackgroundColor="#238DF3"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="8"
+                            HeightRequest="50" />
+
+                    <Button Text="Belum punya akun? Registrasi"
+                            Clicked="OnGoToRegisterClicked"
+                            BackgroundColor="Transparent"
+                            TextColor="#8DD9FF" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
